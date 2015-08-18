@@ -15,28 +15,31 @@ console.log('linked');
 var subway1 = new Subway;
 console.log(subway1.lineL);
 
-// var selectOne = document.getElementById('Line');
-// console.log(selectOne)
-// selectOne.addEventListener('change', function(){
-//   console.log('hi')
-//   });
+
+//The Event Listeners--connect these to appropriate functions
+//Is it possible to combine from and to event listeners
+var selectOne = document.getElementById('Line');
+console.log(selectOne)
+selectOne.addEventListener('change', function(){
+  console.log('hi')
+  });
 
 
-// var selectFrom = document.getElementById('From');
-// console.log(selectFrom)
-// selectFrom.addEventListener('change', function(){
-//   console.log('hi')
+var selectFrom = document.getElementById('From');
+console.log(selectFrom)
+selectFrom.addEventListener('change', function(){
+  console.log('hi')
 
 
-//   });
+  });
 
-// var selectTo = document.getElementById('To');
-// console.log(selectFrom)
-// selectFrom.addEventListener('change', function(){
-//   console.log('hi')
+var selectTo = document.getElementById('To');
+console.log(selectFrom)
+selectFrom.addEventListener('change', function(){
+  console.log('hi')
 
 
-//   });
+  });
 
 
 
@@ -44,28 +47,30 @@ console.log(subway1.lineL);
 //how many stops will that be?
 //loop through lineL's array and see which selection of the array it matches
 //then subtract the index of 'from' - the index of two
-
-
 // this.lineL = ['1st','3rd','Union', '6th','8th'];
 // where is initStop in the line? where is finalstop in the line? 
 //where from and where to stored in variables
-    var fromStop =  document.getElementById('From').value
-    var toStop = document.getElementById('To').value
-    console.log(fromStop);
-    console.log(toStop);
-    var fromStopIndex = parseInt(subway1.lineL.indexOf(fromStop));
-    var toStopIndex = parseInt(subway1.lineL.indexOf(toStop));
-    console.log(fromStopIndex);
-    console.log(toStopIndex);
+var fromStop =  document.getElementById('From').value
+var toStop = document.getElementById('To').value
+console.log(fromStop);
+console.log(toStop);
+var fromStopIndex = parseInt(subway1.lineL.indexOf(fromStop));
+var toStopIndex = parseInt(subway1.lineL.indexOf(toStop));
+console.log(fromStopIndex);
+console.log(toStopIndex);
   
-  function countNumberOfStops (initStop, finalStop) {
+function countNumberOfStops (initStop, finalStop) {
 
+  var stops = (toStopIndex - fromStopIndex)
 
-    var stops = toStopIndex - fromStopIndex
-
-    console.log(stops)
-  }
-
+  console.log(stops)
+//Change this to a button like calculate journey instead of alert and return on screen
+//Also make sure page loads first before doing anything like this
+//Make it so if the index is less than 2 , change the string to stop instead of stops.
+//And implement/connect this function and above variables in to the Event listeners
+  alert("There will be " + stops + " stops.");
+}
+countNumberOfStops(fromStopIndex, toStopIndex);
 
  
 }
