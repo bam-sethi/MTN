@@ -15,20 +15,30 @@ console.log('linked');
 var subway1 = new Subway;
 console.log(subway1.lineL);
 
-var selectOne = document.getElementById('Line');
-console.log(selectOne)
-selectOne.addEventListener('change', function(){
-  console.log('hi')
-  });
+// var selectOne = document.getElementById('Line');
+// console.log(selectOne)
+// selectOne.addEventListener('change', function(){
+//   console.log('hi')
+//   });
 
 
-var selectFrom = document.getElementById('From');
-console.log(selectFrom)
-selectFrom.addEventListener('change', function(){
-  console.log('hi')
+// var selectFrom = document.getElementById('From');
+// console.log(selectFrom)
+// selectFrom.addEventListener('change', function(){
+//   console.log('hi')
 
 
-  });
+//   });
+
+// var selectTo = document.getElementById('To');
+// console.log(selectFrom)
+// selectFrom.addEventListener('change', function(){
+//   console.log('hi')
+
+
+//   });
+
+
 
 //function if u go from stop 3 to stop 8 
 //how many stops will that be?
@@ -37,17 +47,23 @@ selectFrom.addEventListener('change', function(){
 
 
 // this.lineL = ['1st','3rd','Union', '6th','8th'];
-
-  function countNumberOfStops (initStop, finalStop) {
 // where is initStop in the line? where is finalstop in the line? 
 //where from and where to stored in variables
     var fromStop =  document.getElementById('From').value
     var toStop = document.getElementById('To').value
+    console.log(fromStop);
+    console.log(toStop);
+    var fromStopIndex = parseInt(subway1.lineL.indexOf(fromStop));
+    var toStopIndex = parseInt(subway1.lineL.indexOf(toStop));
+    console.log(fromStopIndex);
+    console.log(toStopIndex);
+  
+  function countNumberOfStops (initStop, finalStop) {
 
-    var fromStopIndex = subway1.lineL.indexOf('fromStop');
-    var toStopIndex = subway1.lineL.indexOf('toStop');
 
+    var stops = toStopIndex - fromStopIndex
 
+    console.log(stops)
   }
 
 
