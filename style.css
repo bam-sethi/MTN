@@ -1,0 +1,39 @@
+body{
+  background-image: url("http://i.imgur.com/U0btZHy.jpg");
+  background-size: cover;
+  font-family: 'Squada One', cursive;
+}
+h1{
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  font-family: 'Squada One', cursive;
+  font-size: 120px;
+  text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+  margin-top: 10px;
+}
+h2{
+  font-family: 'Squada One', cursive;
+  font-size: 60px;
+  color: rgba(255,255,255,0.9);
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  text-align: center;
+
+}
+.stop{
+  text-align: center;
+}
+.style{
+  color: white;
+  background:grey;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 1px;
+  border-color: black;
+  border-radius: 0;
+  height: 34px;
+  font-family: 'Squada One', cursive;
+  -webkit-appearance: none;
+}

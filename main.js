@@ -16,30 +16,31 @@ var subway1 = new Subway;
 console.log(subway1.lineL);
 
 
-//The Event Listeners--connect these to appropriate functions
-//Is it possible to combine from and to event listeners
-var selectOne = document.getElementById('Line');
-console.log(selectOne)
-selectOne.addEventListener('change', function(){
-  console.log('hi')
-  });
+//These Event Listeners need to be connected  to appropriate functions
+//Is it possible to combine from and to event listeners?
+
+// var selectOne = document.getElementById('Line');
+// console.log(selectOne)
+// selectOne.addEventListener('change', function(){
+//   console.log('hi')
+//   });
 
 
-var selectFrom = document.getElementById('From');
-console.log(selectFrom)
-selectFrom.addEventListener('change', function(){
-  console.log('hi')
+// var selectFrom = document.getElementById('From');
+// console.log(selectFrom)
+// selectFrom.addEventListener('change', function(){
+//   console.log('hi')
 
 
-  });
+//   });
 
-var selectTo = document.getElementById('To');
-console.log(selectFrom)
-selectFrom.addEventListener('change', function(){
-  console.log('hi')
+// var selectTo = document.getElementById('To');
+// console.log(selectFrom)
+// selectTo.addEventListener('change', function(){
+//   console.log('hi')
 
 
-  });
+//   });
 
 
 
